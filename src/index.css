@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+  --navy-dark: #0F172A;
+  --navy-slate: #1E293B;
+  --navy-light: #334155;
+  --gray-body: #475569;
+  --gray-muted: #64748B;
+  --gray-border: #E2E8F0;
+  --bg-offwhite: #F8FAFC;
+  --card-white: #FFFFFF;
+  --emerald-primary: #10B981;
+  --emerald-dark: #059669;
+  --emerald-light: #D1FAE5;
+  --emerald-glow: rgba(16, 185, 129, 0.15);
+  --blue-needs: #3B82F6;
+  --purple-wants: #8B5CF6;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-offwhite);
+  color: var(--gray-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  color: var(--navy-slate);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--gray-body);
+}
+
+/* Base Card Style */
+.fintech-card {
+  background: var(--card-white);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fintech-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* Buttons */
+.btn-emerald {
+  background-color: var(--emerald-primary);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.65rem 1.35rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.btn-emerald:hover {
+  background-color: var(--emerald-dark);
+  box-shadow: 0 4px 12px var(--emerald-glow);
+  transform: translateY(-1px);
+}
+
+.btn-outline-navy {
+  background-color: transparent;
+  color: var(--navy-dark);
+  border: 1.5px solid var(--navy-dark);
+  font-weight: 600;
+  padding: 0.65rem 1.35rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--navy-dark);
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #F1F5F9;
+  color: var(--navy-slate);
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray-border);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.btn-secondary:hover {
+  background-color: #E2E8F0;
+  color: var(--navy-dark);
+}
+
+/* Badges */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-emerald {
+  background-color: var(--emerald-light);
+  color: var(--emerald-dark);
+}
+
+.badge-navy {
+  background-color: #E2E8F0;
+  color: var(--navy-dark);
+}
+
+/* Form Inputs */
+.fintech-input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--radius-sm);
+  background-color: #FFFFFF;
+  color: var(--navy-slate);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fintech-input:focus {
+  outline: none;
+  border-color: var(--emerald-primary);
+  box-shadow: 0 0 0 3px var(--emerald-glow);
+}
+
+/* Container */
+.fintech-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Modal Overlay */
+.fintech-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.fintech-modal-box {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  max-width: 680px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

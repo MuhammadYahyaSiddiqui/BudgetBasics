@@ -1,0 +1,80 @@
+================================================================================
+APTECH LIMITED - WEB INNOVATION UNLEASHED
+PROJECT SUBMISSION README MANIFEST & ASSUMPTIONS (ReadMe.doc)
+================================================================================
+
+Project Name: BudgetBasics
+Theme: NextGen BudgetBee
+Category: Web Innovation Unleashed
+Version: 1.0 (Final Release)
+Author: Student Web Engineering Team
+
+--------------------------------------------------------------------------------
+1. PROJECT DESCRIPTION
+--------------------------------------------------------------------------------
+BudgetBasics is an educational web application designed as a Single Page 
+Application (SPA) to teach students, interns, and young professionals personal 
+finance and budgeting fundamentals. The website features interactive 50-30-20 
+calculators, savings goal projections, gamified needs-vs-wants classification, 
+an interactive session expense tracker with CSV export, money mistake case studies, 
+an infographics learning gallery, and a rule-based AI chatbot assistant.
+
+--------------------------------------------------------------------------------
+2. MANDATORY INSTALLATION & EXECUTION INSTRUCTIONS
+--------------------------------------------------------------------------------
+Step 1: Extract the submitted project ZIP archive into any local folder.
+Step 2: To run the project locally with full JSON dataset support:
+        Method A (Using Python Web Server):
+        - Open Terminal / PowerShell in the project directory.
+        - Run command: python -m http.server 8000
+        - Open your browser and navigate to: http://localhost:8000
+
+        Method B (Using VS Code Live Server):
+        - Open the project folder in Visual Studio Code.
+        - Right-click index.html and select "Open with Live Server".
+
+        Method C (Direct Browser Launch):
+        - Double-click index.html in any modern browser (Chrome, Edge, Firefox, Safari).
+
+--------------------------------------------------------------------------------
+3. LIST OF ASSUMPTIONS MADE
+--------------------------------------------------------------------------------
+Assumption 1:
+The application adheres strictly to the Aptech SRS "No-Backend" constraint. 
+All data persistence is handled via Client-Side LocalStorage / SessionStorage, 
+and pre-populated data is loaded from JSON files located in the /data directory.
+
+Assumption 2:
+Currency values can be dynamically toggled by the evaluator between PKR, USD, 
+INR, EUR, and GBP. Default currency is set to PKR (Rs 35,000 allowance benchmark).
+
+Assumption 3:
+Feedback and Contact forms perform robust client-side regular expression (regex) 
+validation and render interactive toast confirmations without transmitting 
+sensitive data to external servers.
+
+Assumption 4:
+The AI Chatbot ("BeeBot AI") executes an in-browser NLP token & fuzzy matching 
+engine against a structured JSON intent knowledge graph, guaranteeing 100% 
+offline availability without third-party API dependencies.
+
+--------------------------------------------------------------------------------
+4. TEST DATASETS PROVIDED
+--------------------------------------------------------------------------------
+- /data/sample_budget.json  : Pre-configured student budget benchmarks.
+- /data/mistakes.json       : 6 Real-life student money mistake scenarios.
+- /data/chatbot_kb.json     : NLP intent patterns and structured responses.
+- /data/quiz_data.json      : Needs vs Wants items and knowledge check questions.
+- /data/infographics.json   : Categorized visual guides and summary points.
+- /data/quotes.json         : Curated financial motivation quotes for the ticker.
+
+--------------------------------------------------------------------------------
+5. HARDWARE & SOFTWARE REQUIREMENTS VERIFICATION
+--------------------------------------------------------------------------------
+- Hardware: Minimum 4GB RAM, Intel Core i3 or higher, modern display.
+- Software: Visual Studio Code, Modern Web Browser (Google Chrome, Edge, Firefox).
+- Dependencies: Bootstrap 5.3 (CDN), Chart.js (CDN), FontAwesome 6 (CDN).
+
+================================================================================
+End of ReadMe.doc
+================================================================================

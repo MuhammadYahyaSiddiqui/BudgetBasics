@@ -1,0 +1,75 @@
+{
+  "botName": "BeeBot AI",
+  "disclaimer": "BeeBot is an educational assistant designed to provide financial literacy guidance. It does not provide legal, banking, or formal financial investment advice.",
+  "fallbackMessage": "I don't have enough specific educational information on that topic yet. Try asking me about 'Needs vs Wants', '50-30-20 Rule', 'How to save money', 'Emergency Fund', or 'Expense planning'!",
+  "suggestedPrompts": [
+    "What is the 50-30-20 rule?",
+    "How do I differentiate Needs vs Wants?",
+    "How much money should a student save?",
+    "How do I avoid overspending?",
+    "How can a student build an Emergency Fund?",
+    "What are top budget tips for hostel students?"
+  ],
+  "intents": [
+    {
+      "intent": "greeting",
+      "keywords": ["hello", "hi", "hey", "salam", "assalam", "good morning", "good evening", "howdy", "start", "aoa"],
+      "response": "Hello there! 👋 I am BeeBot, your NextGen BudgetBee personal finance guide. How can I help you master your student budget today?"
+    },
+    {
+      "intent": "rule_50_30_20",
+      "keywords": ["50", "30", "20", "formula", "split", "rule", "method", "percentage", "ratio"],
+      "response": "The **50-30-20 Rule** is a proven, intuitive budgeting framework:\n• **50% for Needs:** Essential expenses required for survival and education (transport, rent, basic food, utilities).\n• **30% for Wants:** Lifestyle choices, dining out, hobbies, and leisure.\n• **20% for Savings:** Building an emergency fund, future goals, or debt clearance.\n\nTry our interactive calculator in the 50-30-20 section above!"
+    },
+    {
+      "intent": "needs_vs_wants",
+      "keywords": ["need", "want", "needs", "wants", "difference", "essential", "priority", "classify", "what is a need"],
+      "response": "Here is the key difference:\n• **Needs** are absolute essentials you cannot live or study without (e.g. prescribed textbooks, hostel rent, daily meals, basic transport).\n• **Wants** are desires that enhance comfort or pleasure (e.g. brand new branded shoes, gaming passes, takeaway burgers).\n\n💡 *Golden Rule:* If removing the item causes severe harm or stops your studies, it's a Need. Otherwise, it's a Want!"
+    },
+    {
+      "intent": "how_much_save",
+      "keywords": ["how much", "how much should i save", "saving percentage", "ideal savings", "monthly save", "target save"],
+      "response": "As a student or young adult, aim to save **at least 15% to 20%** of your monthly allowance or income. Even if you can only save PKR 500 or $10 per week, the consistency builds the lifelong habit of paying yourself first!"
+    },
+    {
+      "intent": "avoid_overspending",
+      "keywords": ["avoid overspending", "stop overspending", "overspend", "over spending", "control spending", "spend less", "how do i avoid overspending"],
+      "response": "Here is BeeBot's 4-step blueprint to prevent overspending:\n1. **Use Cash / Fixed Envelope:** Keep only your weekly discretionary budget in your active wallet.\n2. **The 24-Hour Rule:** Never buy non-essential items immediately; wait 24 hours.\n3. **Cook / Batch Meal Prep:** Dining out and daily tea/coffee runs drain 40% of student cash.\n4. **Track Every Rupee/Dollar:** Log expenses in our Expense Planner tool!"
+    },
+    {
+      "intent": "emergency_fund",
+      "keywords": ["emergency", "emergency fund", "backup", "crisis", "savings", "save", "urgent"],
+      "response": "An **Emergency Fund** is a stash of money set aside exclusively for unexpected financial shocks (e.g., sudden phone repair, medical prescription, unexpected course project materials).\n\n🎯 *Student Target:* Aim to save 1 to 3 months of basic living expenses. Start by saving just PKR 500 - 1,000 every month!"
+    },
+    {
+      "intent": "hostel_tips",
+      "keywords": ["hostel", "roommate", "dorm", "hostelites", "hostel student", "living away", "shared"],
+      "response": "For students living in hostels or shared apartments:\n• **Group Grocery Buying:** Buy grains and staples in bulk with flatmates.\n• **Split Utility Tracker:** Use a shared ledger to avoid roommate conflict.\n• **Hostel 60/20/20 Rule:** Allocate 60% Needs (rent & mess), 20% Wants, and 20% Savings."
+    },
+    {
+      "intent": "impulse_buying",
+      "keywords": ["impulse", "urge", "shopping", "stop spending", "control", "sale", "discount", "impulsive"],
+      "response": "To eliminate **Impulse Buying**:\n1. Use the **24-Hour Rule**: Wait 24 hours before buying non-essential items.\n2. Calculate the item's cost in **Work Hours**: (e.g. 'This shirt costs 10 hours of my internship pay').\n3. Delete saved credit/debit card autofill from shopping apps to create friction."
+    },
+    {
+      "intent": "expense_tracking",
+      "keywords": ["track", "planner", "record", "log", "expenses", "spend", "management", "excel"],
+      "response": "Tracking expenses gives you awareness! You can use our **Expense Planner** tool on this page to log daily entries by Category (Food, Transport, Education). Review your numbers weekly to catch unnecessary micro-spending."
+    },
+    {
+      "intent": "student_discount",
+      "keywords": ["discount", "deal", "student id", "card", "save money", "cheap", "free"],
+      "response": "Always leverage your **Student ID Card**! Many software tools (GitHub Student Pack, Spotify, Notion, Figma), public transit networks, museums, and electronics stores offer 20% to 100% student discounts. Always ask before paying full price!"
+    },
+    {
+      "intent": "freelancing_income",
+      "keywords": ["freelance", "side hustle", "earn", "income", "part time", "job", "pocket money"],
+      "response": "Boost your cash flow as a student:\n• Offer skills like web development, graphic design, tutoring, or content writing.\n• Follow the **50-50 Extra Income Rule:** When you earn side cash, put 50% directly into savings and use 50% for your needs and rewards!"
+    },
+    {
+      "intent": "about_project",
+      "keywords": ["who are you", "what is budgetbasics", "creator", "aptech", "project", "web innovation"],
+      "response": "BudgetBasics is an educational web application developed for the Aptech 'Web Innovation Unleashed' initiative. It empowers students with intuitive calculators, interactive quizzes, and financial habit-building tools!"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "info-50-30-20",
+    "title": "The 50-30-20 Rule Visual Guide",
+    "topic": "budgeting",
+    "categoryLabel": "Budget Framework",
+    "summary": "Visual diagram demonstrating how to divide any monthly allowance into 50% Needs, 30% Wants, and 20% Savings.",
+    "badges": ["Essential", "Beginner Friendly"],
+    "icon": "fa-chart-pie",
+    "svgKey": "pie-split",
+    "bulletPoints": [
+      "50% Needs: Housing, groceries, commute, utilities, medical",
+      "30% Wants: Hobbies, eating out, entertainment, shopping",
+      "20% Savings: Emergency fund, investments, long-term goals"
+    ]
+  },
+  {
+    "id": "info-needs-vs-wants",
+    "title": "Needs vs Wants Decision Matrix",
+    "topic": "smart-spending",
+    "categoryLabel": "Decision Making",
+    "summary": "A 3-step decision flow diagram that guides students through impulse evaluation before making any purchase.",
+    "badges": ["Decision Flow", "Mindset"],
+    "icon": "fa-scale-balanced",
+    "svgKey": "decision-tree",
+    "bulletPoints": [
+      "Step 1: Does not buying this prevent safety, health, or education?",
+      "Step 2: Can I comfortably afford it without borrowing?",
+      "Step 3: Wait 24 hours to test emotional vs real demand."
+    ]
+  },
+  {
+    "id": "info-budget-cycle",
+    "title": "The Student Monthly Budget Cycle",
+    "topic": "budgeting",
+    "categoryLabel": "Lifecycle",
+    "summary": "A 4-stage cyclical roadmap: Plan Income -> Track Daily Outflows -> Review Variance -> Adjust Next Month.",
+    "badges": ["Process", "Monthly Habit"],
+    "icon": "fa-arrows-spin",
+    "svgKey": "cycle-loop",
+    "bulletPoints": [
+      "Week 1: Allocate funds immediately upon receiving allowance",
+      "Week 2 & 3: Log transactions in the Expense Tracker",
+      "Week 4: Review remaining balances and transfer surplus to Savings"
+    ]
+  },
+  {
+    "id": "info-savings-challenge",
+    "title": "30-Day Student Savings Challenge",
+    "topic": "saving",
+    "categoryLabel": "Action Plan",
+    "summary": "An engaging progressive savings challenge table designed to save PKR 10,000+ in 30 small daily steps.",
+    "badges": ["Gamified", "High Reward"],
+    "icon": "fa-trophy",
+    "svgKey": "challenge-grid",
+    "bulletPoints": [
+      "Day 1-10: Save PKR 100/day by cutting discretionary snacks",
+      "Day 11-20: Save PKR 250/day with home-cooked meal prep",
+      "Day 21-30: Save PKR 400/day through subscription audit & discounts"
+    ]
+  },
+  {
+    "id": "info-grocery-hacks",
+    "title": "Student Smart Grocery & Dining Guide",
+    "topic": "smart-spending",
+    "categoryLabel": "Practical Hacks",
+    "summary": "Tactical infographics on bulk purchasing, generic brands, student meal prep, and avoiding supermarket traps.",
+    "badges": ["Cost Saver", "Daily Life"],
+    "icon": "fa-basket-shopping",
+    "svgKey": "grocery-hacks",
+    "bulletPoints": [
+      "Never shop on an empty stomach (reduces junk purchases by 40%)",
+      "Buy store-brand staple grains and pulses instead of imported brands",
+      "Cook batch meals on Sundays to avoid expensive weekday deliveries"
+    ]
+  }
+]

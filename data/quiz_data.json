@@ -1,0 +1,72 @@
+{
+  "needsVsWantsQuiz": [
+    {
+      "id": 1,
+      "title": "Prescribed Course Textbook",
+      "description": "Required reference book for your core semester programming subject.",
+      "cost": 2200,
+      "correct": "need",
+      "explanation": "Essential for academic success and completing graded assignments. This is a core Need."
+    },
+    {
+      "id": 2,
+      "title": "Designer Branded Sneakers",
+      "description": "Limited-edition shoes when you already own two pairs of comfortable sneakers.",
+      "cost": 14000,
+      "correct": "want",
+      "explanation": "You already have functional footwear. This purchase is driven by lifestyle and prestige, making it a Want."
+    },
+    {
+      "id": 3,
+      "title": "Monthly Public Bus Pass",
+      "description": "Daily transit card to commute from home to campus.",
+      "cost": 3000,
+      "correct": "need",
+      "explanation": "Essential transportation required to attend classes consistently. This is a Need."
+    },
+    {
+      "id": 4,
+      "title": "Premium Multi-Platform Video Streaming",
+      "description": "4K Ultra-HD 4-screen subscription plan.",
+      "cost": 1800,
+      "correct": "want",
+      "explanation": "Entertainment is great for relaxation, but premium 4K streaming is optional and falls under Wants."
+    },
+    {
+      "id": 5,
+      "title": "Emergency Medicine / Prescription",
+      "description": "Doctor-prescribed antibiotics and allergy medication.",
+      "cost": 1500,
+      "correct": "need",
+      "explanation": "Health and physical well-being always take top priority as a non-negotiable Need."
+    },
+    {
+      "id": 6,
+      "title": "Daily Gourmet Cafe Latte",
+      "description": "Buying an imported vanilla latte before every morning lecture.",
+      "cost": 7500,
+      "correct": "want",
+      "explanation": "Caffeine can be prepared affordably at home/hostel. Cafe lattes are discretionary luxury Wants."
+    }
+  ],
+  "knowledgeCheck": [
+    {
+      "question": "According to the 50-30-20 rule, what percentage of your income should go directly into savings or debt repayment?",
+      "options": ["10%", "20%", "30%", "50%"],
+      "correctIndex": 1,
+      "rationale": "20% is the standard recommended target for building emergency reserves and achieving future goals."
+    },
+    {
+      "question": "Which of the following is considered a 'Fixed Expense' for a college student?",
+      "options": ["Weekend dining out", "Monthly hostel accommodation rent", "New video game purchase", "Concert tickets"],
+      "correctIndex": 1,
+      "rationale": "Hostel rent stays constant every month and is legally required, qualifying as a fixed expense."
+    },
+    {
+      "question": "What is the recommended student '24-Hour Rule' intended to prevent?",
+      "options": ["Late assignment submissions", "Impulse buying and emotional spending", "Missing class attendance", "Over-sleeping"],
+      "correctIndex": 1,
+      "rationale": "The 24-Hour Rule gives your brain emotional cooling time before buying non-essential items."
+    }
+  ]
+}

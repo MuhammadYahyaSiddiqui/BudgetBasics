@@ -1,0 +1,32 @@
+{
+  "currency": "PKR",
+  "monthlyIncome": 35000,
+  "categories": [
+    {
+      "type": "Needs (50%)",
+      "budgeted": 17500,
+      "items": [
+        {"name": "University/College Transport & Fuel", "amount": 6500, "category": "Transport", "essential": true},
+        {"name": "Books, Stationery & Internet Data", "amount": 4000, "category": "Education", "essential": true},
+        {"name": "Hostel / Canteen Meal Plan", "amount": 7000, "category": "Food", "essential": true}
+      ]
+    },
+    {
+      "type": "Wants (30%)",
+      "budgeted": 10500,
+      "items": [
+        {"name": "Weekend Cafe Hangouts & Fast Food", "amount": 4500, "category": "Food", "essential": false},
+        {"name": "Streaming & Gaming Subscriptions", "amount": 2500, "category": "Entertainment", "essential": false},
+        {"name": "Apparel & Gadget Accessories", "amount": 3500, "category": "Shopping", "essential": false}
+      ]
+    },
+    {
+      "type": "Savings (20%)",
+      "budgeted": 7000,
+      "items": [
+        {"name": "Emergency Student Fund", "amount": 4000, "category": "Savings", "essential": true},
+        {"name": "Laptop Upgrade Fund", "amount": 3000, "category": "Savings", "essential": true}
+      ]
+    }
+  ]
+}

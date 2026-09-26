@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Impulse Buying & Emotional Spending",
+    "category": "Spending Habits",
+    "icon": "fa-bolt",
+    "severity": "High Impact",
+    "scenario": "Ali was browsing social media and saw a flashy smartwatch on flash sale for PKR 8,000. He bought it immediately without checking his remaining monthly allowance.",
+    "consequence": "He ran short of cash by the 20th of the month and had to borrow money for university bus fares and course photocopy materials.",
+    "correctiveAction": "Implement the '24-Hour Rule'. Wait a full day before buying non-essential items over PKR 1,500 to evaluate if you truly need them.",
+    "tags": ["impulse", "shopping", "discipline"]
+  },
+  {
+    "id": 2,
+    "title": "Ignoring Small Daily Leakages ('Latte Factor')",
+    "category": "Daily Expenses",
+    "icon": "fa-mug-hot",
+    "severity": "Medium Impact",
+    "scenario": "Sara buys a PKR 350 specialty cold coffee and snacks between lectures every weekday, thinking 'it's just a few hundred rupees'.",
+    "consequence": "PKR 350 × 22 class days = PKR 7,700 per month spent unconsciously on snacks without budgeting.",
+    "correctiveAction": "Carry a reusable water bottle and home snacks. Allocate a fixed weekly treat limit (e.g. PKR 1,000 max) to keep discretionary eating in check.",
+    "tags": ["snacks", "coffee", "micro-spending"]
+  },
+  {
+    "id": 3,
+    "title": "Unused Subscriptions & Auto-Renewals",
+    "category": "Recurring Costs",
+    "icon": "fa-credit-card",
+    "severity": "Medium Impact",
+    "scenario": "Hamza signed up for a 30-day free trial on two premium fitness and streaming apps, entered card details, and forgot to cancel.",
+    "consequence": "Auto-deducted PKR 3,200 every month for 4 months without actively using either service.",
+    "correctiveAction": "Audit your bank/card statements monthly. Use phone calendar reminders set for 3 days before any free trial expires.",
+    "tags": ["subscriptions", "trials", "auto-renewal"]
+  },
+  {
+    "id": 4,
+    "title": "Spending Without a Budget Plan",
+    "category": "Planning",
+    "icon": "fa-compass",
+    "severity": "Critical",
+    "scenario": "Zain receives his monthly allowance of PKR 25,000 and spends freely during the first two weeks, assuming the balance will last.",
+    "consequence": "Frequent month-end financial stress, relying on loans or skipping essential study resources.",
+    "correctiveAction": "Adopt the 50-30-20 Rule on day one. Allocate 50% for fixed needs, 20% straight into savings, and split the remaining 30% evenly across the 4 weeks.",
+    "tags": ["budgeting", "planning", "50-30-20"]
+  },
+  {
+    "id": 5,
+    "title": "Delaying Savings ('I Will Save When I Earn More')",
+    "category": "Savings Mindset",
+    "icon": "fa-piggy-bank",
+    "severity": "Long-Term Impact",
+    "scenario": "Bilal believes saving only matters once he lands a full-time corporate job after graduation, saving PKR 0 from his current internship stipend.",
+    "consequence": "Missed the power of compound interest and lacks an emergency safety net when unexpected medical or exam fees arise.",
+    "correctiveAction": "Start saving even 10% or PKR 500/month today. Financial habit formation is far more crucial than the initial monetary amount.",
+    "tags": ["savings", "future", "emergency-fund"]
+  },
+  {
+    "id": 6,
+    "title": "Late Fee Penalties & Overdrafts",
+    "category": "Financial Management",
+    "icon": "fa-triangle-exclamation",
+    "severity": "High Impact",
+    "scenario": "Ayesha frequently pays utility, hostel dues, or semester exam fees 2-3 days past the due date, incurring 10-15% surcharges.",
+    "consequence": "Wasted PKR 4,000 annually purely on late payment fines that could have gone towards textbooks or savings.",
+    "correctiveAction": "Schedule recurring automatic bill reminders on your smartphone or pay fixed dues on the day income is received.",
+    "tags": ["late-fees", "penalties", "bills"]
+  }
+]
