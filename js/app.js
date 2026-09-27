@@ -495,6 +495,18 @@ function initCertificateGenerator() {
   }
 }
 
+/* ================= Print Certificate Handler ================= */
+window.printCertificate = function() {
+  const modalEl = document.getElementById('certificateModal');
+  if (modalEl && typeof bootstrap !== 'undefined') {
+    const certModal = bootstrap.Modal.getOrCreateInstance(modalEl);
+    certModal.show();
+  }
+  
+  // Trigger standard single-page landscape print
+  window.print();
+};
+
 /* ================= Forms ================= */
 function initContactAndFeedbackForms() {
   const stars = document.querySelectorAll('.star-rating-btn');

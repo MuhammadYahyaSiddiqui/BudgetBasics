@@ -447,30 +447,129 @@
   }
 }
 
-/* Print Stylesheet */
+/* ================= Dedicated Single-Page Certificate Print Stylesheet ================= */
 @media print {
-  .navbar-custom,
-  .top-ticker-bar,
-  .chatbot-fab-btn,
-  .chatbot-modal,
-  .back-to-top-btn,
-  .sound-toggle-btn,
-  .theme-toggle-btn,
-  .search-filter-wrapper,
-  .btn-custom,
-  .mobile-nav-toggle,
-  .nav-backdrop {
-    display: none !important;
+  @page {
+    size: landscape;
+    margin: 0.5cm;
   }
 
-  body {
+  /* Reset HTML & BODY for clean single-page printing */
+  html, body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
     background: #FFFFFF !important;
-    color: #000000 !important;
+    color: #0F172A !important;
+    overflow: visible !important;
   }
 
-  .custom-card,
-  .table-responsive-custom {
+  /* Hide EVERY element on the webpage except modal and certificate */
+  body > *:not(.modal) {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  header, nav, section, footer, .top-ticker-bar, .navbar-custom,
+  .chatbot-fab-btn, .chatbot-modal, .back-to-top-btn, #searchFilterSection,
+  #toastContainer, .modal-backdrop, .modal-header, .modal-footer,
+  .btn, .input-group, #certInputNameField, label {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+  }
+
+  /* Show ONLY the Certificate Modal container and Frame */
+  #certificateModal {
+    display: block !important;
+    position: static !important;
+    visibility: visible !important;
+    width: 100% !important;
+    height: auto !important;
+    background: transparent !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #certificateModal .modal-dialog,
+  #certificateModal .modal-content,
+  #certificateModal .modal-body {
+    display: block !important;
+    position: static !important;
+    visibility: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
     box-shadow: none !important;
-    border: 1px solid #CCCCCC !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  #certificateModal .modal-body > *:not(#printableCertificateFrame) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Standalone Beautiful Single-Page Certificate Frame */
+  #printableCertificateFrame {
+    display: block !important;
+    visibility: visible !important;
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92vw !important;
+    max-width: 940px !important;
+    margin: 0 auto !important;
+    padding: 2.2rem 3rem !important;
+    background: #FFFFFF !important;
+    border: 5px solid #F59E0B !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+    text-align: center !important;
+    page-break-inside: avoid !important;
+    page-break-after: avoid !important;
+    page-break-before: avoid !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  #printableCertificateFrame * {
+    visibility: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  #printableCertificateFrame .text-gradient {
+    background: none !important;
+    -webkit-text-fill-color: #10B981 !important;
+    color: #10B981 !important;
+  }
+
+  #printableCertificateFrame #certStudentName {
+    color: #1E1B4B !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  #printableCertificateFrame h2 {
+    color: #10B981 !important;
+    font-size: 1.85rem !important;
+    font-weight: 800 !important;
+  }
+
+  #printableCertificateFrame p {
+    color: #475569 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
   }
 }
