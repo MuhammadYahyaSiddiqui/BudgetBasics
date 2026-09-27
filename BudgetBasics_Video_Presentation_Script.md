@@ -2,7 +2,7 @@
 **Event / Competition:** Aptech Project Competition / Web Innovation Unleashed  
 **Project Name:** BudgetBasics - Master Your Money, Step by Step  
 **Team Lead:** Muhammad Yahya Siddiqui  
-**Team Members:** Ibad Khan, Arsalan Shah, Harmain Hussain  
+**Team Members:** Ibad Khan, Arsalan Shah, Harmain Hussain, Muhammad Sufyan  
 **Technology Stack:** HTML5, CSS3 (Modern Glassmorphism & Custom Properties), JavaScript (ES6+), Bootstrap 5.3, FontAwesome 6, Chart.js, jsPDF, html2canvas, Canvas-Confetti  
 **Deployment:** 100% Client-Side Responsive Web App (Vercel & GitHub Ready)
 
@@ -32,6 +32,7 @@
 > 1. **Ibad Khan**  
 > 2. **Arsalan Shah**  
 > 3. **Harmain Hussain**  
+> 4. **Muhammad Sufyan**  
 >  
 > Aur hum sab ne mil kar jo web project develop kiya hai, uska naam hai **'BudgetBasics - Master Your Money, Step by Step'**.*
 

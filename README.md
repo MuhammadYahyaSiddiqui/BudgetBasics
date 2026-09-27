@@ -278,6 +278,7 @@ To test with local `fetch()` requests against the `data/` JSON files:
 | **Ibad Khan** | 💻 Frontend & UI Contributor | [@ibadlabs732](https://github.com/ibadlabs732/) |
 | **Arsalan Shah** | 📊 Research & Content Contributor | [@arsalananwar382-cpu](https://github.com/arsalananwar382-cpu) |
 | **Harmain Hussain** | 🎨 UI/UX & QA Contributor | [@Harmain-Hussain](https://github.com/Harmain-Hussain/) |
+| **Muhammad Sufyan** | ⚙️ Technical Documentation & Testing Contributor | [@muhammad-sufyan4](https://github.com/muhammad-sufyan4/) |
 
 ---
 
