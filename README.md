@@ -270,10 +270,21 @@ To test with local `fetch()` requests against the `data/` JSON files:
 
 ## 10. Authors & Project Credits
 
-- **Project Developer:** Muhammad Yahya Siddiqui
+### 👥 Development Team & Contributors
+
+| Team Member | Role | GitHub Profile |
+| :--- | :--- | :--- |
+| **Muhammad Yahya Siddiqui** | 👑 Team Lead & Lead Developer | [@MuhammadYahyaSiddiqui](https://github.com/MuhammadYahyaSiddiqui) |
+| **Ibad Khan** | 💻 Frontend & UI Contributor | [@ibadlabs732](https://github.com/ibadlabs732/) |
+| **Arsalan Shah** | 📊 Research & Content Contributor | [@arsalananwar382-cpu](https://github.com/arsalananwar382-cpu) |
+
+---
+
+### 🏆 Academic Evaluation
+- **Institution:** Aptech Computer Education
 - **Competition:** Aptech Web Innovation Unleashed 2026
-- **Theme:** NextGen BudgetBee
+- **Project Theme:** NextGen BudgetBee
 - **Submission Date:** September 2026
 
 ---
-*Developed with excellence for the Aptech Web Innovation Unleashed Evaluation 2026.*
+*Developed with excellence by Team BudgetBasics for the Aptech Web Innovation Unleashed Evaluation 2026.*

@@ -2,7 +2,7 @@
 **Event / Competition:** Aptech Project Competition / Web Innovation Unleashed  
 **Project Name:** BudgetBasics - Master Your Money, Step by Step  
 **Team Lead:** Muhammad Yahya Siddiqui  
-**Team Members:** [Member 1 Name], [Member 2 Name], [Member 3 Name]  
+**Team Members:** Ibad Khan, Arsalan Shah  
 **Technology Stack:** HTML5, CSS3 (Modern Glassmorphism & Custom Properties), JavaScript (ES6+), Bootstrap 5.3, FontAwesome 6, Chart.js, jsPDF, html2canvas, Canvas-Confetti  
 **Deployment:** 100% Client-Side Responsive Web App (Vercel & GitHub Ready)
 
@@ -29,9 +29,8 @@
 > Mera naam **Muhammad Yahya Siddiqui** hai, aur maine Aptech ke annual project competition **'Web Innovation Unleashed'** mein apne group members ke sath participate kiya hai.  
 >  
 > Mere team members hain:  
-> 1. **[Member 1 ka Naam]**  
-> 2. **[Member 2 ka Naam]**  
-> 3. **[Member 3 ka Naam]**  
+> 1. **Ibad Khan**  
+> 2. **Arsalan Shah**  
 >  
 > Aur hum sab ne mil kar jo web project develop kiya hai, uska naam hai **'BudgetBasics - Master Your Money, Step by Step'**.*
 
