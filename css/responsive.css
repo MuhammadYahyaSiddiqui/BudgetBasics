@@ -287,14 +287,37 @@
   }
 }
 
-/* Tablet & Mobile Breakpoints */
+/* ================= Global Mobile Overflow & Base Polish ================= */
+html, body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, svg, canvas, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix iOS Safari Auto-Zoom Bug on Form Input Focus */
+@media (max-width: 768px) {
+  input, select, textarea,
+  .form-control-custom,
+  .form-select,
+  .form-control {
+    font-size: 16px !important;
+  }
+}
+
+/* Tablet & Mobile Breakpoints (<= 992px) */
 @media (max-width: 992px) {
   .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.95rem;
   }
 
   .top-ticker-bar {
@@ -316,27 +339,47 @@
   }
 }
 
+/* Medium Mobile & Tablet Screens (<= 768px) */
 @media (max-width: 768px) {
   .section-padding {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   .hero-title {
-    font-size: 2.15rem;
+    font-size: 2rem;
   }
 
   .hero-description {
-    font-size: 1rem;
+    font-size: 0.98rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn-custom {
+    width: 100%;
+    min-height: 48px;
   }
 
   .hero-metrics-bar {
-    flex-wrap: wrap;
-    gap: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .hero-metric-box {
+    padding: 0.75rem;
+    text-align: center;
   }
 
   /* Ticker on Mobile */
@@ -344,7 +387,7 @@
     flex-direction: column;
     gap: 0.35rem;
     align-items: center;
-    padding: 0.4rem 0.75rem;
+    padding: 0.4rem 0.65rem;
     min-height: auto;
   }
 
@@ -356,29 +399,46 @@
 
   .top-bar-meta {
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 0.85rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding-top: 0.25rem;
     font-size: 0.72rem;
+    flex-wrap: wrap;
   }
 
+  /* Interactive Elements Touch Friendly */
   .game-actions-group {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.75rem;
   }
 
   .game-choice-btn {
     width: 100%;
     max-width: 100%;
+    min-height: 50px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
   }
 
+  .calc-tab-btn {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Chatbot Modal on Mobile */
   .chatbot-modal {
-    right: 0.75rem;
-    left: 0.75rem;
-    bottom: 5rem;
+    position: fixed;
+    right: 0.5rem;
+    left: 0.5rem;
+    bottom: 4.8rem;
     width: auto;
-    height: 480px;
-    max-height: calc(100vh - 6rem);
+    height: 75vh;
+    height: 75dvh;
+    max-height: 520px;
+    z-index: 1080;
+    border-radius: 16px;
   }
 
   .chatbot-fab-btn {
@@ -402,48 +462,159 @@
   }
 
   .search-filter-wrapper {
-    padding: 1.15rem;
+    padding: 1rem;
   }
 
   .filter-pills-group {
     width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
   }
 
   .filter-btn {
-    flex: 1;
+    flex: 1 0 auto;
     text-align: center;
-    font-size: 0.78rem;
-    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    padding: 0.45rem 0.75rem;
+    min-height: 40px;
+  }
+
+  /* Expense Planner Stats & Table Mobile */
+  .planner-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .stat-box {
+    padding: 0.85rem;
+  }
+
+  .stat-box-num {
+    font-size: 1.25rem;
+  }
+
+  .table-responsive-custom {
+    margin-top: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    padding: 0.75rem 0.65rem;
+    font-size: 0.85rem;
   }
 }
 
+/* Small Smart Phones (<= 480px) */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
+    line-height: 1.25;
   }
 
   .brand-logo span {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
   }
 
   .brand-icon-wrapper {
-    width: 34px;
-    height: 34px;
-    font-size: 1rem;
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
   }
 
   .custom-card {
-    padding: 1.25rem;
+    padding: 1.1rem;
+    border-radius: var(--radius-md);
   }
 
   .split-card {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    padding: 0.9rem;
   }
 
   .split-amount {
     font-size: 1.2rem;
+  }
+
+  .goals-bucket-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .planner-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .stat-box {
+    padding: 0.75rem;
+  }
+
+  .stat-box-title {
+    font-size: 0.72rem;
+  }
+
+  .stat-box-num {
+    font-size: 1.15rem;
+  }
+
+  /* Clean up top ticker on small phones */
+  .top-bar-meta span:nth-child(3) {
+    display: none; /* Hide date on very narrow phones to keep top bar sleek */
+  }
+
+  .salary-preset-btn,
+  .target-preset-btn {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.55rem;
+  }
+
+  /* Modals on small phones */
+  .modal-dialog {
+    margin: 0.5rem !important;
+    max-width: calc(100vw - 1rem) !important;
+  }
+
+  .modal-content {
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Certificate Container Preview on Mobile */
+  #printableCertificateFrame {
+    padding: 1.25rem 1rem !important;
+    border-width: 3px !important;
+  }
+
+  #printableCertificateFrame #certStudentName {
+    font-size: 1.5rem !important;
+  }
+
+  #printableCertificateFrame h2 {
+    font-size: 1.35rem !important;
+  }
+}
+
+/* Extra Small Phones (<= 360px - e.g. iPhone SE, Galaxy Fold outer screen) */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.55rem;
+  }
+
+  .section-title {
+    font-size: 1.45rem;
+  }
+
+  .planner-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .btn-custom {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
