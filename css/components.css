@@ -813,6 +813,16 @@
   color: var(--brand-primary);
 }
 
+.footer-team-link {
+  color: var(--text-secondary) !important;
+  text-decoration: none !important;
+  transition: color var(--transition-fast);
+}
+
+.footer-team-link:hover {
+  color: var(--brand-primary) !important;
+}
+
 .back-to-top-btn {
   position: fixed;
   bottom: 2rem;
