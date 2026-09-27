@@ -16,7 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactAndFeedbackForms();
   initBudgetHealthCheck();
   initCertificateGenerator();
+  ensureFavicon();
 });
+
+function ensureFavicon() {
+  const icon = document.querySelector("link[rel='icon']");
+  if (icon) {
+    icon.href = icon.href.split('?')[0] + '?v=' + Date.now();
+  }
+}
 
 /* ================= Web Audio API UI Sound Engine (Disabled) ================= */
 function playUiSound() {
