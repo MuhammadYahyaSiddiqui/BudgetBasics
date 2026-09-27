@@ -502,6 +502,25 @@ h1, h2, h3, h4, h5, h6, .brand-logo, .hero-title, .section-title, .metric-value,
   white-space: nowrap;
 }
 
+.fundamental-deep-dive-btn {
+  transition: all var(--transition-fast) !important;
+  font-size: 0.88rem !important;
+}
+
+.fundamental-deep-dive-btn .chevron-icon {
+  transition: transform var(--transition-normal);
+  font-size: 0.82rem;
+}
+
+.fundamental-deep-dive-btn[aria-expanded="true"] .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.fundamental-deep-dive-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 .btn-primary-custom {
   background: linear-gradient(135deg, var(--brand-primary), #6366F1);
   color: #FFFFFF;
