@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <linearGradient id="bbFavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4F46E5"/>
-      <stop offset="100%" stop-color="#10B981"/>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#10B981" />
     </linearGradient>
   </defs>
-  <!-- Background Container Squircle matching .brand-icon-wrapper -->
-  <rect width="512" height="512" rx="128" fill="url(#bbFavGrad)"/>
+  <!-- Rounded rectangle matching .brand-icon-wrapper (12px on 34px -> rx 140 on 512px) -->
+  <rect width="512" height="512" rx="140" fill="url(#brandGrad)" />
   
-  <!-- Exact FontAwesome fa-feather-pointed Icon in Pure White -->
-  <g transform="translate(64, 64) scale(0.75)">
-    <path fill="#FFFFFF" d="M512 32c0 113.6-80.6 208.4-188.7 230.1L248 337.4l62.1 62.1c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-53.7-53.7-44.7 44.7 31.5 31.5c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-23.1-23.1-29.4 29.4c-6.8 6.8-16.2 10.3-25.5 9.7s-18.1-5.7-22.9-13.8l-40-66.7c-4.1-6.8-4.7-15.2-1.7-22.6s9.4-12.7 17.2-14.7l66.7-16.7c2.9-.7 5.9-1.1 8.8-1.1 6.5 0 13 2.5 17.9 7.4l9.9 9.9 44.7-44.7-53.7-53.7c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l62.1 62.1 75.3-75.3C271.6 80.6 366.4 0 480 0c17.7 0 32 14.3 32 32zM320 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+  <!-- Exact FontAwesome 6 Solid fa-feather-pointed icon in pure white -->
+  <g transform="translate(80, 80) scale(0.6875)">
+    <path fill="#FFFFFF" d="M512 32c0 113.6-80.6 208.4-188.7 230.1L248 337.4l62.1 62.1c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-53.7-53.7-44.7 44.7 31.5 31.5c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-23.1-23.1-29.4 29.4c-6.8 6.8-16.2 10.3-25.5 9.7s-18.1-5.7-22.9-13.8l-40-66.7c-4.1-6.8-4.7-15.2-1.7-22.6s9.4-12.7 17.2-14.7l66.7-16.7c2.9-.7 5.9-1.1 8.8-1.1 6.5 0 13 2.5 17.9 7.4l9.9 9.9 44.7-44.7-53.7-53.7c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l62.1 62.1 75.3-75.3C271.6 80.6 366.4 0 480 0c17.7 0 32 14.3 32 32zM320 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
   </g>
 </svg>
