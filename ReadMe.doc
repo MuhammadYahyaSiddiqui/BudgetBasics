@@ -6,75 +6,110 @@ PROJECT SUBMISSION README MANIFEST & ASSUMPTIONS (ReadMe.doc)
 Project Name: BudgetBasics
 Theme: NextGen BudgetBee
 Category: Web Innovation Unleashed
-Version: 1.0 (Final Release)
-Author: Student Web Engineering Team
+Version: 5.0 Pro (Final Submission Release)
+Developer / Author: Muhammad Yahya Siddiqui
+Platform: 100% Client-Side Single Page Application (SPA)
 
 --------------------------------------------------------------------------------
-1. PROJECT DESCRIPTION
+1. PROJECT DESCRIPTION & MISSION
 --------------------------------------------------------------------------------
-BudgetBasics is an educational web application designed as a Single Page 
-Application (SPA) to teach students, interns, and young professionals personal 
-finance and budgeting fundamentals. The website features interactive 50-30-20 
-calculators, savings goal projections, gamified needs-vs-wants classification, 
-an interactive session expense tracker with CSV export, money mistake case studies, 
-an infographics learning gallery, and a rule-based AI chatbot assistant.
+BudgetBasics is an advanced, high-performance financial literacy and smart 
+budgeting portal designed as a Single Page Application (SPA) to teach students, 
+interns, and young professionals personal finance and budgeting fundamentals. 
+
+The website features:
+- Deep Dive educational breakdowns (Income & Inflows, Fixed vs Variable, Pay Yourself First).
+- Interactive 50-30-20 & Custom Split Calculators with dynamic Range Sliders and Chart.js.
+- S.M.A.R.T. Savings Goal Projections with Multi-Bucket CRUD and Timeline Accumulation Charts.
+- Gamified Needs-vs-Wants interactive decision classifier.
+- Personal Salary & Expense Budget Planner with full CRUD, Category Filters, and CSV Export.
+- Smart Dynamic Financial Advisor analyzing safe spending limits and deficit recovery plans.
+- 4-Pillar Financial Health Scorecard with printable verified Certificate of Achievement.
+- Visual Infographics Gallery with Search, Sort, and Lightbox inspection modals.
+- BeeBot AI offline financial assistant with client-side NLP pattern matching.
+- Obsidian Black & Mint Green modern theme engine with instant light/dark toggle.
 
 --------------------------------------------------------------------------------
 2. MANDATORY INSTALLATION & EXECUTION INSTRUCTIONS
 --------------------------------------------------------------------------------
-Step 1: Extract the submitted project ZIP archive into any local folder.
-Step 2: To run the project locally with full JSON dataset support:
-        Method A (Using Python Web Server):
+Step 1: Extract the project archive or clone from GitHub.
+Step 2: To run the project locally:
+
+        Method A (Direct Browser Launch - Fastest):
+        - Double-click index.html in any modern browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Brave).
+
+        Method B (Using Local Web Server - Recommended for JSON fetch):
         - Open Terminal / PowerShell in the project directory.
         - Run command: python -m http.server 8000
         - Open your browser and navigate to: http://localhost:8000
 
-        Method B (Using VS Code Live Server):
+        Method C (Using VS Code Live Server):
         - Open the project folder in Visual Studio Code.
         - Right-click index.html and select "Open with Live Server".
 
-        Method C (Direct Browser Launch):
-        - Double-click index.html in any modern browser (Chrome, Edge, Firefox, Safari).
+--------------------------------------------------------------------------------
+3. MATHEMATICAL & CALCULATION FORMULAS USED
+--------------------------------------------------------------------------------
+1. 50-30-20 Allocation Formula:
+   - Needs = Monthly Income * 50%
+   - Wants = Monthly Income * 30%
+   - Savings = Monthly Income * 20%
+   (Also supports 60/20/20 Hostel Student and 40/20/40 Aggressive Saver models)
+
+2. S.M.A.R.T. Savings Goal Calculations:
+   - Remaining to Save = Target Amount - Current Savings
+   - Funding Progress (%) = (Current Savings / Target Amount) * 100
+   - Months to Reach Target = ceil(Remaining to Save / Monthly Contribution)
+   - Weekly Saving Pace = Monthly Contribution / 4
+   - Daily Saving Pace = Monthly Contribution / 30
+
+3. Expense Planner Budget Variance:
+   - Total Spent = Sum of all logged expense records
+   - Remaining Budget = Monthly Salary - Total Spent
+   - Spent Ratio (%) = (Total Spent / Monthly Salary) * 100
+   - Needs Usage (%) = (Spent on Needs / Target Needs Budget) * 100
+   - Wants Usage (%) = (Spent on Wants / Target Wants Budget) * 100
+   - Daily Safe Wants Cap = (Remaining Wants) / 15 days
+
+4. Financial Health Score Matrix (0 to 40 Points):
+   - Pillar 1 (Savings Timing): Immediate Day 1 (10 pts) -> Month-end (2 pts)
+   - Pillar 2 (Impulse Delay 24h): Consistent 24h delay (10 pts) -> Instant impulse (2 pts)
+   - Pillar 3 (Expense Tracking): Daily detailed logging (10 pts) -> No tracking (2 pts)
+   - Pillar 4 (Emergency Shield): 1-2 months cushion (10 pts) -> Zero cushion (0 pts)
+   - Rating: 34-40 Master | 24-33 Disciplined | 14-23 Developing | <14 High Risk
 
 --------------------------------------------------------------------------------
-3. LIST OF ASSUMPTIONS MADE
+4. LIST OF ASSUMPTIONS MADE
 --------------------------------------------------------------------------------
-Assumption 1:
+Assumption 1 (Zero-Backend Constraint):
 The application adheres strictly to the Aptech SRS "No-Backend" constraint. 
-All data persistence is handled via Client-Side LocalStorage / SessionStorage, 
-and pre-populated data is loaded from JSON files located in the /data directory.
+All data persistence is handled via Client-Side LocalStorage, and pre-populated 
+data is loaded from JSON files in the /data directory with offline fallbacks.
 
-Assumption 2:
-Currency values can be dynamically toggled by the evaluator between PKR, USD, 
-INR, EUR, and GBP. Default currency is set to PKR (Rs 35,000 allowance benchmark).
+Assumption 2 (Multi-Currency Flexibility):
+Currency values can be dynamically toggled across PKR, USD, INR, EUR, and GBP. 
+Default currency is set to PKR (Rs 35,000 allowance benchmark).
 
-Assumption 3:
-Feedback and Contact forms perform robust client-side regular expression (regex) 
-validation and render interactive toast confirmations without transmitting 
-sensitive data to external servers.
+Assumption 3 (Data Privacy & Validation):
+Feedback and Contact forms perform client-side validation and render 
+interactive toast confirmations without transmitting sensitive data to external servers.
 
-Assumption 4:
-The AI Chatbot ("BeeBot AI") executes an in-browser NLP token & fuzzy matching 
-engine against a structured JSON intent knowledge graph, guaranteeing 100% 
-offline availability without third-party API dependencies.
-
---------------------------------------------------------------------------------
-4. TEST DATASETS PROVIDED
---------------------------------------------------------------------------------
-- /data/sample_budget.json  : Pre-configured student budget benchmarks.
-- /data/mistakes.json       : 6 Real-life student money mistake scenarios.
-- /data/chatbot_kb.json     : NLP intent patterns and structured responses.
-- /data/quiz_data.json      : Needs vs Wants items and knowledge check questions.
-- /data/infographics.json   : Categorized visual guides and summary points.
-- /data/quotes.json         : Curated financial motivation quotes for the ticker.
+Assumption 4 (Offline AI Assistant):
+The AI Chatbot ("BeeBot AI") executes an in-browser NLP token matching 
+engine against a structured JSON intent knowledge base, guaranteeing 100% 
+offline availability without third-party API dependencies or cost.
 
 --------------------------------------------------------------------------------
-5. HARDWARE & SOFTWARE REQUIREMENTS VERIFICATION
+5. SUBMISSION MANIFEST
 --------------------------------------------------------------------------------
-- Hardware: Minimum 4GB RAM, Intel Core i3 or higher, modern display.
-- Software: Visual Studio Code, Modern Web Browser (Google Chrome, Edge, Firefox).
-- Dependencies: Bootstrap 5.3 (CDN), Chart.js (CDN), FontAwesome 6 (CDN).
+Files included in submission:
+- index.html (Main SPA application)
+- css/ (main.css, components.css, responsive.css)
+- js/ (app.js, calculators.js, planner.js, quiz.js, chatbot.js, gallery.js, offline_data.js, tour.js)
+- data/ (sample_budget.json, mistakes.json, chatbot_kb.json, quiz_data.json, infographics.json, quotes.json)
+- README.md & ReadMe.doc
+- BudgetBasics_Aptech_Final_Project_Report.pdf
 
 ================================================================================
-End of ReadMe.doc
+Developed for Aptech Web Innovation Unleashed Evaluation 2026.
 ================================================================================

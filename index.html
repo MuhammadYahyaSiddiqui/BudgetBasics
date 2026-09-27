@@ -10,10 +10,10 @@
 
   <title>BudgetBasics | NextGen BudgetBee — Student Financial Literacy Hub</title>
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Bootstrap 5.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -293,34 +293,113 @@
       </div>
 
       <div class="row g-4 mb-5">
+        <!-- 1. Income & Inflows Card -->
         <div class="col-md-4">
-          <div class="custom-card h-100">
+          <div class="custom-card h-100 d-flex flex-column">
             <div class="card-icon-box icon-box-primary">
               <i class="fa-solid fa-money-bill-trend-up"></i>
             </div>
             <h4 class="fw-bold mb-2">Income & Inflows</h4>
             <p class="text-secondary mb-3">Pocket money, monthly stipends, part-time jobs, or scholarships. Always calculate your exact net available money before spending.</p>
-            <span class="badge bg-primary bg-opacity-10 text-primary fw-semibold p-2">Foundation Pillar</span>
+            <div class="mb-3">
+              <span class="badge bg-primary bg-opacity-10 text-primary fw-semibold p-2">Foundation Pillar</span>
+            </div>
+
+            <button type="button" class="btn btn-sm btn-outline-primary w-100 mt-auto d-flex align-items-center justify-content-between rounded-3 py-2 px-3 fw-semibold" data-bs-toggle="collapse" data-bs-target="#deepDiveIncome" aria-expanded="false" aria-controls="deepDiveIncome">
+              <span><i class="fa-solid fa-circle-info me-1"></i> Learn More & Details</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <!-- Collapsible Deep Dive Div -->
+            <div class="collapse mt-3" id="deepDiveIncome">
+              <div class="p-3 rounded-3 border text-start" style="background: var(--bg-tertiary); border-color: var(--border-color) !important; font-size: 0.88rem;">
+                <h6 class="fw-bold text-primary mb-2"><i class="fa-solid fa-lightbulb me-1"></i> Student Income Streams Explained:</h6>
+                <ul class="list-unstyled mb-2 d-flex flex-column gap-2 text-secondary">
+                  <li><strong class="text-primary">1. Family Allowance / Pocket Money:</strong> Fixed recurring monthly support from parents (e.g. <span class="currency-label">PKR</span> 25,000 - 35,000/mo).</li>
+                  <li><strong class="text-primary">2. Part-Time & Freelance Gigs:</strong> Web development, graphic design, content writing, or tuition coaching for school students.</li>
+                  <li><strong class="text-primary">3. Merit Stipends & Grants:</strong> Semester performance rewards, university discounts, or government subsidies.</li>
+                </ul>
+                <div class="p-2 rounded-2 mt-2" style="background: var(--brand-primary-light); border-left: 3px solid var(--brand-primary);">
+                  <strong class="text-primary d-block small fw-bold">💡 The Golden Inflow Rule:</strong>
+                  <span class="small text-secondary">Always base your fixed living budget on your <em>guaranteed base income</em>, not fluctuating freelance bonuses.</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- 2. Fixed vs Variable Card -->
         <div class="col-md-4">
-          <div class="custom-card h-100">
+          <div class="custom-card h-100 d-flex flex-column">
             <div class="card-icon-box icon-box-gold">
               <i class="fa-solid fa-arrow-down-up-across-line"></i>
             </div>
             <h4 class="fw-bold mb-2">Fixed vs Variable</h4>
             <p class="text-secondary mb-3">Fixed expenses (hostel rent, transit pass) stay constant each month. Variable costs (groceries, cafe treats) change and require weekly limits.</p>
-            <span class="badge bg-warning bg-opacity-10 text-warning fw-semibold p-2">Expense Control</span>
+            <div class="mb-3">
+              <span class="badge bg-warning bg-opacity-10 text-warning fw-semibold p-2">Expense Control</span>
+            </div>
+
+            <button type="button" class="btn btn-sm btn-outline-warning w-100 mt-auto d-flex align-items-center justify-content-between rounded-3 py-2 px-3 fw-semibold text-warning border-warning" data-bs-toggle="collapse" data-bs-target="#deepDiveFixedVariable" aria-expanded="false" aria-controls="deepDiveFixedVariable">
+              <span><i class="fa-solid fa-circle-info me-1"></i> Learn More & Details</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <!-- Collapsible Deep Dive Div -->
+            <div class="collapse mt-3" id="deepDiveFixedVariable">
+              <div class="p-3 rounded-3 border text-start" style="background: var(--bg-tertiary); border-color: var(--border-color) !important; font-size: 0.88rem;">
+                <h6 class="fw-bold text-warning mb-2"><i class="fa-solid fa-scale-balanced me-1"></i> The Classification Matrix:</h6>
+                <div class="mb-2">
+                  <strong class="text-primary d-block">🔒 Fixed Costs (Non-Negotiable):</strong>
+                  <span class="text-secondary small">Hostel rent, semester tuition installments, monthly transit/bus pass, mobile monthly data bundle. Paid on fixed dates.</span>
+                </div>
+                <div class="mb-2">
+                  <strong class="text-warning d-block">⚡ Variable Costs (Controllable):</strong>
+                  <span class="text-secondary small">Campus canteen meals, weekend hangouts, fast food delivery, clothing shopping, stationery add-ons.</span>
+                </div>
+                <div class="p-2 rounded-2 mt-2" style="background: rgba(245, 158, 11, 0.1); border-left: 3px solid var(--brand-gold);">
+                  <strong class="text-warning d-block small fw-bold">🎯 The 7-Day Envelope Strategy:</strong>
+                  <span class="small text-secondary">Divide monthly variable cash into 4 equal weekly caps. Once this week's quota is reached, pause cafe visits until Monday!</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- 3. Pay Yourself First Card -->
         <div class="col-md-4">
-          <div class="custom-card h-100">
+          <div class="custom-card h-100 d-flex flex-column">
             <div class="card-icon-box icon-box-accent">
               <i class="fa-solid fa-piggy-bank"></i>
             </div>
             <h4 class="fw-bold mb-2">Pay Yourself First</h4>
             <p class="text-secondary mb-3">Transfer your 20% savings target immediately on day one into a separate account or envelope before touching discretionary funds.</p>
-            <span class="badge bg-success bg-opacity-10 text-success fw-semibold p-2">Golden Habit</span>
+            <div class="mb-3">
+              <span class="badge bg-success bg-opacity-10 text-success fw-semibold p-2">Golden Habit</span>
+            </div>
+
+            <button type="button" class="btn btn-sm btn-outline-success w-100 mt-auto d-flex align-items-center justify-content-between rounded-3 py-2 px-3 fw-semibold" data-bs-toggle="collapse" data-bs-target="#deepDivePayYourselfFirst" aria-expanded="false" aria-controls="deepDivePayYourselfFirst">
+              <span><i class="fa-solid fa-circle-info me-1"></i> Learn More & Details</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <!-- Collapsible Deep Dive Div -->
+            <div class="collapse mt-3" id="deepDivePayYourselfFirst">
+              <div class="p-3 rounded-3 border text-start" style="background: var(--bg-tertiary); border-color: var(--border-color) !important; font-size: 0.88rem;">
+                <h6 class="fw-bold text-success mb-2"><i class="fa-solid fa-piggy-bank me-1"></i> Reverse Budgeting Formula:</h6>
+                <div class="p-2 rounded-2 mb-2 text-center" style="background: var(--bg-primary); border: 1px dashed var(--border-color);">
+                  <code class="fw-bold text-success">Income (Day 1) - 20% Savings = 80% Guilt-Free Spend</code>
+                </div>
+                <ul class="list-unstyled mb-2 d-flex flex-column gap-2 text-secondary">
+                  <li><strong class="text-success">Step 1:</strong> On allowance day, immediately transfer <span class="currency-label">PKR</span> 7,000 into a separate savings wallet or locked cushion fund.</li>
+                  <li><strong class="text-success">Step 2:</strong> Live comfortably and guilt-free on the remaining <span class="currency-label">PKR</span> 28,000.</li>
+                </ul>
+                <div class="p-2 rounded-2 mt-2" style="background: var(--brand-accent-light); border-left: 3px solid var(--brand-accent);">
+                  <strong class="text-success d-block small fw-bold">🧠 The Psychology:</strong>
+                  <span class="small text-secondary">You cannot spend money that isn't sitting in your daily wallet. "Out of sight, out of mind" is the #1 wealth building secret.</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
