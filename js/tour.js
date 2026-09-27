@@ -7,25 +7,19 @@ const tourSteps = [
   {
     stepNumber: 1,
     targetId: 'basics',
-    title: 'Module 1: Budgeting 101 & Allowance Baseline',
-    badge: 'Foundation',
-    instruction: 'Discover how money flows for students. Enter your monthly allowance in the baseline card to establish your starting budget benchmark.',
-    actionLabel: 'Try It: Enter an allowance or click Calculate',
-    actionFn: () => {
-      const input = document.getElementById('studentAllowanceInput') || document.getElementById('calcIncomeInput');
-      if (input) {
-        input.focus();
-        window.playUiSound?.('click');
-      }
-    }
+    title: 'Module 1: Budgeting Fundamentals',
+    badge: 'Concepts & Foundation',
+    instruction: 'Explore the 6 core pillars of personal finance for students: Smart Budgeting, Savings & Emergency Fund, Debt Management, Investing, Banking, and Retirement.',
+    actionFn: null // Informational reading step - no auto-try button
   },
   {
     stepNumber: 2,
     targetId: 'needs-wants',
     title: 'Module 2: Gamified Needs vs. Wants Challenge',
-    badge: 'Gamification',
-    instruction: 'Sharpen your financial decision-making! Read the active real-life scenario card and click "Need" or "Want" to score points and learn the 24-Hour Rule.',
-    actionLabel: 'Try It: Click Need / Want button above',
+    badge: 'Interactive Game',
+    instruction: 'Sharpen your financial decision-making! Read the active scenario card and test your decision with the instant classifier.',
+    actionLabel: 'Try It: Test decision on current spending scenario',
+    btnText: '<i class="fa-solid fa-play"></i> Auto Test',
     actionFn: () => {
       const btn = document.querySelector('.game-choice-btn');
       if (btn) {
@@ -37,9 +31,10 @@ const tourSteps = [
     stepNumber: 3,
     targetId: 'calculator-503020',
     title: 'Module 3: 50-30-20 Rule Calculator & Live Chart',
-    badge: 'Interactive Tool',
-    instruction: 'Master the 50-30-20 framework. Drag the slider or click rule presets (e.g. Hostel 60/20/20) to see the live Doughnut Chart rotate and update.',
-    actionLabel: 'Try It: Click "Sample (35k)" or switch Preset',
+    badge: 'Interactive Calculator',
+    instruction: 'Master the 50-30-20 framework. Drag the slider or click rule presets (e.g. 50k / 35k) to see the live Doughnut Chart rotate and calculate allocations.',
+    actionLabel: 'Try It: Run 50-30-20 calculation model',
+    btnText: '<i class="fa-solid fa-calculator"></i> Auto Calculate',
     actionFn: () => {
       const sampleBtn = document.getElementById('btnLoadSample503020');
       if (sampleBtn) sampleBtn.click();
@@ -49,9 +44,10 @@ const tourSteps = [
     stepNumber: 4,
     targetId: 'savings-goals',
     title: 'Module 4: Savings Goal Milestone Projector',
-    badge: 'Projections',
-    instruction: 'Calculate exact time required for milestone purchases (e.g., Coding Laptop, Emergency Fund). Click a preset to project target completion date.',
-    actionLabel: 'Try It: Select "💻 Laptop (90k)" Preset',
+    badge: 'Goal Calculator',
+    instruction: 'Calculate exact time required for milestone purchases (e.g., Coding Laptop, Emergency Cushion). Project target completion timeline and daily saving pace.',
+    actionLabel: 'Try It: Project Laptop Savings Goal (90k)',
+    btnText: '<i class="fa-solid fa-chart-line"></i> Auto Calculate',
     actionFn: () => {
       const presetBtn = document.querySelector('.goal-preset-btn');
       if (presetBtn) presetBtn.click();
@@ -61,9 +57,10 @@ const tourSteps = [
     stepNumber: 5,
     targetId: 'expense-planner',
     title: 'Module 5: Interactive Expense Planner (CRUD)',
-    badge: 'Persistence',
-    instruction: 'Log daily transactions into LocalStorage. Add an expense, filter by category, check budget health alerts, and export your monthly report as CSV.',
-    actionLabel: 'Try It: Enter sample expense (Rs 1,400)',
+    badge: 'Financial Ledger & Planner',
+    instruction: 'Log daily transactions into LocalStorage. Add an expense, filter by category, check real-time budget health alerts, and export your monthly report.',
+    actionLabel: 'Try It: Log a sample student expense (Rs 1,400)',
+    btnText: '<i class="fa-solid fa-receipt"></i> Auto Log Expense',
     actionFn: () => {
       const descInput = document.getElementById('expDescription');
       const amtInput = document.getElementById('expAmount');
@@ -75,35 +72,28 @@ const tourSteps = [
   },
   {
     stepNumber: 6,
-    targetId: 'chatbotFabBtn',
-    title: 'Module 6: BeeBot AI Floating Assistant',
-    badge: 'AI Suite (SRS Mod 8)',
-    instruction: 'Consult our smart client-side AI chatbot widget! Tap the floating BeeBot icon to ask financial questions, hear voice answers, and get quick student budget tips.',
-    actionLabel: 'Try It: Open BeeBot AI Widget',
-    actionFn: () => {
-      const fab = document.getElementById('chatbotFabBtn');
-      if (fab) fab.click();
-    }
+    targetId: 'money-mistakes',
+    title: 'Module 6: Top 10 Money Mistakes to Avoid',
+    badge: 'Visual Traps Guide',
+    instruction: 'Explore common student financial pitfalls (Impulse Delivery, Lifestyle Inflation, Ignoring Emergency Cushions) with actionable mitigation strategies.',
+    actionFn: null // Informational reading step - no auto-try button
   },
   {
     stepNumber: 7,
-    targetId: 'money-mistakes',
-    title: 'Module 7: Money Mistakes & Visual Infographics',
-    badge: 'Visual Learning',
-    instruction: 'Explore the 10 fatal student financial traps and browse the interactive SVG decision matrix gallery with full-screen lightbox modal.',
-    actionLabel: 'Try It: Expand an accordion mistake item',
-    actionFn: () => {
-      const firstAccordion = document.querySelector('#moneyMistakesAccordion .accordion-button');
-      if (firstAccordion) firstAccordion.click();
-    }
+    targetId: 'infographics',
+    title: 'Module 7: Visual Infographics Gallery',
+    badge: 'Educational Gallery',
+    instruction: 'Browse category-filtered financial infographics (Budgeting, Investing, Debt, Savings) with high-resolution lightbox modal inspection.',
+    actionFn: null // Informational reading step - no auto-try button
   },
   {
     stepNumber: 8,
     targetId: 'health-check',
     title: 'Module 8: Scorecard & Certificate of Achievement',
-    badge: 'Evaluation',
-    instruction: 'Evaluate your financial discipline with the 4-question health check, then claim and print your formal Aptech Certificate of Achievement!',
-    actionLabel: 'Try It: Click "Calculate Health Score" or "Earn Certificate"',
+    badge: 'Interactive Assessment & Certification',
+    instruction: 'Evaluate your financial discipline with the 4-question health scorecard, then claim and print your formal Aptech Certificate of Achievement!',
+    actionLabel: 'Try It: Calculate Health Score & Claim Certificate',
+    btnText: '<i class="fa-solid fa-trophy"></i> Auto Score',
     actionFn: () => {
       const scoreBtn = document.querySelector('#budgetHealthCheckForm button[type="submit"]');
       if (scoreBtn) scoreBtn.click();
@@ -293,7 +283,16 @@ function renderCurrentTourStep() {
   if (progressBar) progressBar.style.width = `${(step.stepNumber / tourSteps.length) * 100}%`;
   if (title) title.textContent = step.title;
   if (instruction) instruction.textContent = step.instruction;
-  if (actionLabel) actionLabel.innerHTML = `<i class="fa-solid fa-hand-pointer text-warning me-1"></i> ${step.actionLabel}`;
+  const actionCard = document.querySelector('.tour-action-card');
+  const actionBtn = document.getElementById('btnTourRunAction');
+
+  if (step.actionFn && typeof step.actionFn === 'function') {
+    if (actionCard) actionCard.style.display = 'flex';
+    if (actionLabel) actionLabel.innerHTML = `<i class="fa-solid fa-hand-pointer text-warning me-1"></i> ${step.actionLabel}`;
+    if (actionBtn) actionBtn.innerHTML = step.btnText || '<i class="fa-solid fa-calculator"></i> Auto Calculate';
+  } else {
+    if (actionCard) actionCard.style.display = 'none';
+  }
 
   if (prevBtn) {
     prevBtn.disabled = currentTourIndex === 0;
